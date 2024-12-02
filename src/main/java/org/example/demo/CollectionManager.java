@@ -7,6 +7,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 public class CollectionManager {
     // Список для зберігання об'єктів Desk
@@ -20,6 +21,39 @@ public class CollectionManager {
         this.desks = new ArrayList<>();
         this.cards = new ArrayList<>();
     }
+
+    public String desks_name_unique() {
+        for (int i = 0 ; i < desks.size() - 1; i++ ){
+            for (int j = i + 1; j < desks.size(); j++ ){
+                Desk d1 = desks.get(i);
+                Desk d2 = desks.get(j);
+
+                if(Objects.equals(d1.getName(), d2.getName())){
+                    return "Names are not unique";
+                }
+
+            }
+        }
+
+        return "Names are unique";
+    }
+
+    public String cards_front_unique() {
+        for (int i = 0 ; i < cards.size() - 1; i++ ){
+            for (int j = i + 1; j < cards.size(); j++ ){
+                Card c1 = cards.get(i);
+                Card c2 = cards.get(j);
+
+                if(Objects.equals(c1.getFront(), c2.getFront())){
+                    return "Fronts are not unique";
+                }
+
+            }
+        }
+
+        return "Fronts are unique";
+    }
+
 
     public void feelCollection() throws SQLException {
         DatabaseConnection connectNow = new DatabaseConnection();

@@ -101,7 +101,7 @@ public class AddCardScreenController {
     }
 
     @FXML
-    private void addNewCardButtonClicked() throws SQLException {
+    public void addNewCardButtonClicked() throws SQLException {
         String front = frontTextField.getText();
         String back = backTextField.getText();
 

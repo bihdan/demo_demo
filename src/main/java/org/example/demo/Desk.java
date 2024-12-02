@@ -6,6 +6,9 @@ public class Desk {
 
     public Desk(int id, String name) {
         this.id = id;
+        if (name == null || name.trim().isEmpty()) {
+            throw new IllegalArgumentException("Назва колоди не повинна бути пустою.");
+        }
         this.name = name;
     }
 
