@@ -1,0 +1,120 @@
+.backgroundFond {
+    -fx-background-color: #253838;
+    -fx-background-size: cover;
+    -fx-border-style: none;
+}
+.menuButtonBar{
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.menuButton{
+    -fx-background-color: #242424;
+    -fx-min-height: 38px;
+    -fx-max-height: 38px;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 1px;
+    -fx-border-color: #242424;
+    -fx-border-radius: 1px;
+    -fx-text-fill: white;
+
+}
+
+.menuButton:hover {
+    -fx-border-color: #000000;
+}
+
+.centerDeskPane{
+    -fx-background-size: auto;
+    -fx-border-style: none;
+
+}
+.scroll-bar:vertical{
+    -fx-background-color: transparent;
+}
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: #253838;
+}
+
+.scroll-bar:vertical .thumb{
+    -fx-background-color: #268585;
+    -fx-min-width: 30px;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-min-height: 60px;
+    -fx-padding: 3;
+}
+
+.desksCardsDisplay{
+    -fx-background-radius: 10;
+    -fx-background-color: #2c4242;
+    -fx-overflow: clip;
+}
+
+
+.leftFond{
+    -fx-background-color: transparent;
+}
+
+.customTextForLabels{
+    -fx-text-fill: white;
+    -fx-padding: 0 0 0 10;
+}
+
+.customTextField{
+    -fx-background-color: #2c4242;
+    -fx-text-fill: white;
+    -fx-border-radius: 1px;
+    -fx-border-color: black;
+    -fx-wrap-text: true;
+}
+.paneForCards{
+    -fx-background-color: #2c4242;
+}
+
+.HBoxesForCards{
+}
+
+.HBoxesForCards :hover{
+    -fx-background-color: #2d6060;
+    -fx-background-radius: 4px;
+}
+
+.VBoxesForDesks{
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+.VBoxesForDesks :hover{
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-background-color: #2d6060;
+}
+
+.customChoiceBox{
+    -fx-background-color: #2d6060;
+    -fx-selection-bar: #268585;
+    -fx-faint-focus-color: #2d6060;
+    -fx-control-inner-background: #2d6060;
+}
+.customChoiceBox .label{
+    -fx-text-fill: #ffffff;
+
+}
+
+.VBoxesForCards{
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+.VBoxesForCards :hover{
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-background-color: #2d6060;
+}

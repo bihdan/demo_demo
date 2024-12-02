@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="600.0" styleClass="backgroundFond" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.ReviewScreenController">
+   <children>
+      <AnchorPane layoutX="1.0" prefHeight="565.0" prefWidth="600.0" styleClass="centerDeskPane">
+         <children>
+            <AnchorPane layoutX="95.0" layoutY="13.0" prefHeight="450.0" prefWidth="410.0" styleClass="desksCardsDisplay">
+               <children>
+                  <Label fx:id="frontLabel" layoutX="44.0" layoutY="44.0" prefHeight="86.0" prefWidth="323.0" styleClass="customTextForLabels" />
+                  <Line endX="222.0" layoutX="144.0" layoutY="146.0" startX="-100.0" />
+                  <Label fx:id="backLabel" layoutX="44.0" layoutY="163.0" prefHeight="86.0" prefWidth="323.0" styleClass="customTextForLabels" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="492.0" prefHeight="70.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="showAnswerReviewButton" layoutX="46.0" layoutY="16.0" maxWidth="300" onAction="#showAnswerReviewButtonClicked" prefHeight="38.0" prefWidth="124.0" styleClass="menuButton" text="Показати " textFill="WHITE" />
+                  <ButtonBar fx:id="barOfButtons"  layoutX="203.0" layoutY="15.0" prefHeight="40.0" prefWidth="360.0">
+                    <buttons>
+                        <Button fx:id="againReviewButton" maxWidth="300" prefHeight="38.0" prefWidth="75.0" style="-fx-background-color: #F86E6EFF; -fx-border-radius: 5px;" styleClass="menuButton" text="Знову" textFill="WHITE" />
+                        <Button fx:id="goodReviewButton" maxWidth="300" prefHeight="38.0" prefWidth="75.0" style="-fx-background-color: #F8EA52FF;" styleClass="menuButton" text="Важко" textFill="WHITE" />
+                        <Button fx:id="easyReviewButton" maxWidth="300" prefHeight="38.0" prefWidth="75.0" style="-fx-background-color: #58F852FF;" styleClass="menuButton" text="Добре" textFill="WHITE" />
+                        <Button fx:id="hardReviewButton" maxWidth="300" prefHeight="38.0" prefWidth="75.0" style="-fx-background-color: #52F8D1FF;" styleClass="menuButton" text="Просто" textFill="WHITE" />
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

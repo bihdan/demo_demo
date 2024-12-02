@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="backgroundFond" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.BrowseScreenController">
+   <children>
+      <AnchorPane layoutX="110.4000015258789" layoutY="50.0" styleClass="backgroundFond" AnchorPane.leftAnchor="110.0">
+         <children>
+            <ScrollPane prefHeight="522.0" prefWidth="250.0" styleClass="backgroundFond">
+              <content>
+                <AnchorPane fx:id="anchorPaneForCards" minHeight="0.0" minWidth="0.0" prefHeight="542.0" prefWidth="235.0" styleClass="paneForCards">
+                     <children>
+                        <Label layoutY="5.0" prefHeight="18.0" prefWidth="210.0" text="Label" />
+                        <Label layoutY="23.0" prefHeight="18.0" prefWidth="210.0" text="Label" />
+                        <Label layoutX="210.0" layoutY="23.0" prefHeight="18.0" prefWidth="55.0" text="Label" />
+                        <VBox layoutX="50.0" layoutY="88.0" prefHeight="282.0" prefWidth="280.0">
+                           <children>
+                              <HBox prefHeight="43.0" prefWidth="184.0">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="210.0" text="Label" />
+                                    <Label prefHeight="18.0" prefWidth="55.0" text="Label" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <TextField id="searchField" layoutX="150.0" layoutY="14.0" prefHeight="26.0" prefWidth="210.0" promptText="Пошук карток" styleClass="customTextField">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <Label layoutX="405.0" layoutY="19.0" prefHeight="18.0" prefWidth="90.0" styleClass="customTextForLabels" text="Перед" />
+      <Label layoutX="405.0" layoutY="114.0" prefHeight="18.0" prefWidth="90.0" styleClass="customTextForLabels" text="Зворіт" />
+      <TextField fx:id="fieldForFront" layoutX="405.0" layoutY="50.0" prefHeight="60.0" prefWidth="184.0" styleClass="customTextField" />
+      <TextField fx:id="fieldForBack" layoutX="405.0" layoutY="140.0" prefHeight="60.0" prefWidth="184.0" styleClass="customTextField" />
+      <AnchorPane prefHeight="600.0" prefWidth="107.0" styleClass="leftFond">
+         <children>
+            <ScrollPane prefHeight="600.0" prefWidth="107.0" styleClass="leftFond">
+               <content>
+                  <AnchorPane prefHeight="598.0" prefWidth="105.0" styleClass="backgroundFond" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
