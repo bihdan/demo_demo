@@ -65,7 +65,7 @@ public class AddDeskScreenController {
 //                System.out.println("New card was added successfully!");
 //            }
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw e;
         } finally {
             connectNow.shutdown();
         }

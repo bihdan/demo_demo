@@ -41,7 +41,7 @@ public class AddCardScreenController {
         }
     }
 
-    private void insertCardIntoDatabase(String front, String back, int deskId) throws SQLException {
+    public void insertCardIntoDatabase(String front, String back, int deskId) throws SQLException {
         DatabaseConnection connectNow = new DatabaseConnection();
         Connection conn = connectNow.getConnection();
 
@@ -101,7 +101,7 @@ public class AddCardScreenController {
     }
 
     @FXML
-    private void addNewCardButtonClicked() throws SQLException {
+    public void addNewCardButtonClicked() throws SQLException {
         String front = frontTextField.getText();
         String back = backTextField.getText();
 
