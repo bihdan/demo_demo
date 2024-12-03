@@ -20,6 +20,16 @@ public class AddDeskScreenController {
     @FXML
     private Button canselAddDeskButton;
 
+    private final DatabaseConnection DC ;
+
+    public AddDeskScreenController(DatabaseConnection databaseConnection) {
+        this.DC = databaseConnection;
+    }
+
+    public AddDeskScreenController() {
+        this.DC = new DatabaseConnection();
+    }
+
     @FXML
     private void canselAddDeskButtonClicked() throws IOException {
         Stage stage = (Stage) canselAddDeskButton.getScene().getWindow();
@@ -46,7 +56,7 @@ public class AddDeskScreenController {
     }
 
     public void insertDeskIntoDatabase(String deskName) throws SQLException {
-        DatabaseConnection connectNow = new DatabaseConnection();
+        DatabaseConnection connectNow = DC;
         Connection conn = connectNow.getConnection();
 
         String insertQuery = "insert into `desks`(`name`) values(?);";
